@@ -12,6 +12,8 @@
 		5AE5B4F21EDEBE4300CBD2E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5B4F01EDEBE4300CBD2E8 /* Main.storyboard */; };
 		5AE5B4F41EDEBE4300CBD2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5B4F31EDEBE4300CBD2E8 /* Assets.xcassets */; };
 		5AE5B4F71EDEBE4300CBD2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE5B4F51EDEBE4300CBD2E8 /* LaunchScreen.storyboard */; };
+		5AE5B5011EDEC58700CBD2E8 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE5B5001EDEC58700CBD2E8 /* MemoViewController.swift */; };
+		5BA4D89BE7B8AECB7FF9E0F3 /* Pods_Memo_pad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E92969ED9EAA2391F3E27F8 /* Pods_Memo_pad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		5AE5B4F31EDEBE4300CBD2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AE5B4F61EDEBE4300CBD2E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AE5B4F81EDEBE4300CBD2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE5B5001EDEC58700CBD2E8 /* MemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		5F7696280A798B1ECC082A36 /* Pods-Memo-pad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-pad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-pad/Pods-Memo-pad.release.xcconfig"; sourceTree = "<group>"; };
+		9E92969ED9EAA2391F3E27F8 /* Pods_Memo_pad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_pad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A854C76FC1BA89C897E27192 /* Pods-Memo-pad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo-pad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memo-pad/Pods-Memo-pad.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA4D89BE7B8AECB7FF9E0F3 /* Pods_Memo_pad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E35C337C8EB0A4E0EBFB3EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A854C76FC1BA89C897E27192 /* Pods-Memo-pad.debug.xcconfig */,
+				5F7696280A798B1ECC082A36 /* Pods-Memo-pad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5AE5B4E01EDEBE4300CBD2E8 = {
 			isa = PBXGroup;
 			children = (
 				5AE5B4EB1EDEBE4300CBD2E8 /* Memo-pad */,
 				5AE5B4EA1EDEBE4300CBD2E8 /* Products */,
+				2E35C337C8EB0A4E0EBFB3EA /* Pods */,
+				F294A07A3C28F889B9109CA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				5AE5B4EC1EDEBE4300CBD2E8 /* AppDelegate.swift */,
 				5AE5B4EE1EDEBE4300CBD2E8 /* ViewController.swift */,
+				5AE5B5001EDEC58700CBD2E8 /* MemoViewController.swift */,
 				5AE5B4F01EDEBE4300CBD2E8 /* Main.storyboard */,
 				5AE5B4F31EDEBE4300CBD2E8 /* Assets.xcassets */,
 				5AE5B4F51EDEBE4300CBD2E8 /* LaunchScreen.storyboard */,
 				5AE5B4F81EDEBE4300CBD2E8 /* Info.plist */,
 			);
 			path = "Memo-pad";
+			sourceTree = "<group>";
+		};
+		F294A07A3C28F889B9109CA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E92969ED9EAA2391F3E27F8 /* Pods_Memo_pad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AE5B4FB1EDEBE4300CBD2E8 /* Build configuration list for PBXNativeTarget "Memo-pad" */;
 			buildPhases = (
+				EC185B451B08489B1C2968E2 /* [CP] Check Pods Manifest.lock */,
 				5AE5B4E51EDEBE4300CBD2E8 /* Sources */,
 				5AE5B4E61EDEBE4300CBD2E8 /* Frameworks */,
 				5AE5B4E71EDEBE4300CBD2E8 /* Resources */,
+				7FA5AD2DF8CFBF08C88FAFC9 /* [CP] Embed Pods Frameworks */,
+				924543210E5B95B5795F2F45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FA5AD2DF8CFBF08C88FAFC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memo-pad/Pods-Memo-pad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		924543210E5B95B5795F2F45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memo-pad/Pods-Memo-pad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC185B451B08489B1C2968E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AE5B4E51EDEBE4300CBD2E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +216,7 @@
 			files = (
 				5AE5B4EF1EDEBE4300CBD2E8 /* ViewController.swift in Sources */,
 				5AE5B4ED1EDEBE4300CBD2E8 /* AppDelegate.swift in Sources */,
+				5AE5B5011EDEC58700CBD2E8 /* MemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +337,7 @@
 		};
 		5AE5B4FC1EDEBE4300CBD2E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A854C76FC1BA89C897E27192 /* Pods-Memo-pad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Memo-pad/Info.plist";
@@ -270,6 +350,7 @@
 		};
 		5AE5B4FD1EDEBE4300CBD2E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7696280A798B1ECC082A36 /* Pods-Memo-pad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Memo-pad/Info.plist";
@@ -299,6 +380,7 @@
 				5AE5B4FD1EDEBE4300CBD2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
