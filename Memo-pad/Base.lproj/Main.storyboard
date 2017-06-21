@@ -53,9 +53,6 @@
                                         <state key="normal" title="＋">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="Yju-q8-PeI" kind="show" id="fyj-cJ-j9v"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </view>
@@ -65,6 +62,10 @@
                     <navigationItem key="navigationItem" id="gEw-99-ri5">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3jb-5o-eCU"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="Z7S-cD-hla" id="xvY-Rm-V6a"/>
+                        <segue destination="Yju-q8-PeI" kind="show" identifier="ToMemoView" id="YrB-Mw-Iyw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,8 +95,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="メモ" id="gJp-oo-oJE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Yif-c4-VaS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Yif-c4-VaS">
+                            <connections>
+                                <action selector="saveMemo" destination="Yju-q8-PeI" id="Phv-3h-F11"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="d5r-tS-98F" id="Lps-Q2-XKm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLK-8P-Q2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
