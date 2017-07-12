@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegte {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var table:UITableView!
 
     override func viewDidLoad() {
@@ -21,24 +21,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegt
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     //セルの数を設定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
+    
     //ID付きのセルを取得して、セル付属のtextLabelに「テスト」と表示させてみる
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.textLabel?.text = "テスト"
         return cell!
     }
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegue(withIdentifier: "ToMemoView",sender: nil)
+    
+    //セルがタップされた時に呼び出されるメソッド
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toMemoViewController",sender: nil)
     }
+    
+    //segueを設定
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "ToMemoView") {
+        if (segue.identifier == "toMemoViewController") {
             let _: ViewController = (segue.destination as? ViewController)!
         }
     }
-    
 }
 

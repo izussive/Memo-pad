@@ -64,12 +64,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="table" destination="Z7S-cD-hla" id="xvY-Rm-V6a"/>
-                        <segue destination="Yju-q8-PeI" kind="show" identifier="ToMemoView" id="YrB-Mw-Iyw"/>
+                        <segue destination="Yju-q8-PeI" kind="show" identifier="toMemoViewController" id="g9Z-Io-qGa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1009" y="36"/>
         </scene>
         <!--メモ-->
         <scene sceneID="GQi-Zy-vAU">
@@ -87,7 +87,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -107,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLK-8P-Q2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728.8" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1865" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wrW-LD-lcB">
